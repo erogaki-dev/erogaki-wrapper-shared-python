@@ -11,3 +11,5 @@ class ErogakiWrapperConfig:
     def __init__(self):
         self.instance = uuid4()
         self.redis = ErogakiWrapperRedisConfig()
+
+config = ErogakiWrapperConfig()
