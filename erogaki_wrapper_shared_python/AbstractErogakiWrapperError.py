@@ -6,7 +6,7 @@ class AbstractErogakiWrapperErrorJsonEncoder(JSONEncoder):
         if isinstance(obj, AbstractErogakiWrapperError):
             return {
                 "component": obj.component,
-                "instance": obj.instance,
+                "instance": str(obj.instance),
                 "name": obj.__class__.__name__,
                 "description": obj.description
             }
